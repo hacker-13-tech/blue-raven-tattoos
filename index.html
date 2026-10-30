@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Blue Raven Tattoo — custom tattoo art, thoughtful design and appointment bookings.">
+  <title>Blue Raven Tattoo | Custom Ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">BR</span><span>BLUE RAVEN <small>TATTOO STUDIO</small></span></a>
+  <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+  <nav class="nav"><a href="#work">Gallery</a><a href="#services">Pricing</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="nav-cta" href="#book">Book a session</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div><div class="hero-content">
+    <p class="eyebrow">CUSTOM INK • PERSONAL STORIES</p>
+    <h1>YOUR STORY.<br><em>YOUR INK.</em></h1>
+    <p class="hero-copy">Thoughtful designs. Clean detail. Tattoos made to mean something.</p>
+    <div class="hero-actions"><a class="btn btn-light" href="#book">BOOK A CONSULTATION <span>↗</span></a><a class="text-link" href="#work">Explore the gallery ↓</a></div>
+  </div><div class="hero-note">BLUE RAVEN / EST. FOR THE BOLD</div>
+</section>
+<section class="intro section-wrap">
+  <p class="eyebrow">THE ART OF YOU</p><h2>Ink that feels<br><em>like it belongs.</em></h2>
+  <p class="intro-text">From a small, meaningful piece to a full-day transformation, every tattoo begins with your idea. Tell us what you have in mind and we'll work with you on a design and quote.</p>
+</section>
+<section class="gallery-section" id="work">
+  <div class="section-heading section-wrap"><div><p class="eyebrow">SELECTED INSPIRATION</p><h2>THE GALLERY</h2></div><p>Explore styles and ideas.<br>Custom work is always welcome.</p></div>
+  <div class="gallery-grid">
+    <div class="gallery-card gallery-one"><span>01 / FINE LINE</span></div><div class="gallery-card gallery-two"><span>02 / BLACKWORK</span></div>
+    <div class="gallery-card gallery-three"><span>03 / ORNAMENTAL</span></div><div class="gallery-card gallery-four"><span>04 / REALISM</span></div>
+  </div>
+  <p class="gallery-disclaimer">Gallery images are visual placeholders. Replace them with photos of your own work or images you have permission to use.</p>
+</section>
+<section class="services section-wrap" id="services">
+  <div class="section-heading"><div><p class="eyebrow">CLEAR STARTING RATES</p><h2>THE PRICE OF<br><em>GOOD ART.</em></h2></div><p>Every piece is unique. Your final quote depends on the size, detail, placement and design.</p></div>
+  <div class="price-list">
+    <div class="price-row"><span class="price-num">01</span><span class="price-name">Small tattoos</span><span class="price-from">FROM</span><strong>$250</strong></div>
+    <div class="price-row"><span class="price-num">02</span><span class="price-name">Medium tattoos</span><span class="price-from">FROM</span><strong>$450</strong></div>
+    <div class="price-row"><span class="price-num">03</span><span class="price-name">Large tattoos</span><span class="price-from">FROM</span><strong>$700</strong></div>
+    <div class="price-row"><span class="price-num">04</span><span class="price-name">Full-day sessions</span><span class="price-from">FROM</span><strong>$1,000</strong></div>
+  </div>
+  <div class="price-foot"><span>✦ CUSTOM DESIGNS AVAILABLE</span><span>✦ 50% DEPOSIT TO SECURE A BOOKING</span></div>
+</section>
+<section class="about" id="about"><div class="about-image"><div class="image-caption">MAKE IT PERSONAL.</div></div><div class="about-copy"><p class="eyebrow">THE BLUE RAVEN APPROACH</p><h2>MADE WITH<br><em>INTENTION.</em></h2><p>We believe great tattoos start with a good conversation. Share your reference, preferred placement and approximate size. We'll review your idea, discuss the details and provide a quote before confirming your appointment.</p><a class="btn btn-outline" href="#book">START YOUR DESIGN <span>↗</span></a></div></section>
+<section class="booking section-wrap" id="book">
+  <div class="booking-intro"><p class="eyebrow">LET'S MAKE IT REAL</p><h2>BOOK YOUR<br><em>CONSULTATION.</em></h2><p>Send your idea and preferred appointment date. This is a booking request, not an instant confirmed appointment. We'll contact you to discuss the design, price and availability.</p>
+    <div class="deposit-note"><span class="deposit-icon">50%</span><div><strong>DEPOSIT REQUIRED</strong><p>A 50% deposit is required to secure your appointment after your quote is agreed.</p></div></div>
+  </div>
+  <form id="booking-form" class="booking-form">
+    <div class="form-row"><label>YOUR NAME *<input name="name" required maxlength="100" placeholder="Full name"></label><label>EMAIL ADDRESS *<input name="email" type="email" required placeholder="you@example.com"></label></div>
+    <div class="form-row"><label>PHONE / WHATSAPP *<input name="phone" required placeholder="+1 234 567 890"></label><label>TATTOO SIZE *<select name="size" required><option value="">Choose size</option><option>Small</option><option>Medium</option><option>Large</option><option>Full-day session</option><option>Not sure yet</option></select></label></div>
+    <div class="form-row"><label>STYLE / TYPE *<select name="tattooType" required><option value="">Choose a style</option><option>Fine line</option><option>Blackwork</option><option>Realism</option><option>Traditional</option><option>Lettering</option><option>Floral / ornamental</option><option>Custom / other</option></select></label><label>PLACEMENT *<input name="placement" required placeholder="e.g. forearm, shoulder, back"></label></div>
+    <div class="form-row"><label>PREFERRED DATE<input name="preferredDate" type="date" id="preferred-date"></label><label>PREFERRED TIME<select name="preferredTime"><option value="">Flexible</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label></div>
+    <label>DESCRIBE YOUR IDEA *<textarea name="description" required rows="5" maxlength="2000" placeholder="Tell us about the design, approximate size, details and meaning..."></textarea></label>
+    <label>REFERENCE IMAGE LINK (OPTIONAL)<input name="referenceUrl" type="url" placeholder="Paste a link to your reference image"></label>
+    <div class="hp"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="btn btn-light submit-btn" type="submit">SEND BOOKING REQUEST <span>↗</span></button><p id="form-message" class="form-message" role="status"></p>
+    <small class="form-terms">By submitting, you agree that the studio may contact you about your request. Your appointment is confirmed only after the studio agrees the details and receives the required deposit.</small>
+  </form>
+</section>
+<section class="faq section-wrap" id="faq"><p class="eyebrow">GOOD TO KNOW</p><h2>THE DETAILS.</h2>
+  <details><summary>How much does a tattoo cost?</summary><p>Starting prices are $250 for small, $450 for medium, $700 for large tattoos and $1,000 for a full-day session. Final pricing depends on design, detail, size and placement.</p></details>
+  <details><summary>How do I book?</summary><p>Submit the booking form with your idea, placement, approximate size and preferred date. We'll contact you with a quote and availability.</p></details>
+  <details><summary>Do you create custom designs?</summary><p>Yes. Send your idea, preferred style, placement and size. We'll discuss the design with you.</p></details>
+  <details><summary>Is a deposit required?</summary><p>Yes. A 50% deposit is required to secure an appointment once the design and quote have been agreed.</p></details>
+  <details><summary>Is my appointment confirmed when I submit the form?</summary><p>No. The form sends a request. Your appointment is confirmed only after the studio contacts you, agrees the details and receives the required deposit.</p></details>
+</section>
+</main>
+<footer><a class="brand" href="#home"><span class="brand-mark">BR</span><span>BLUE RAVEN <small>TATTOO STUDIO</small></span></a><p>YOUR STORY. YOUR INK.</p><small>© <span id="year"></span> Blue Raven Tattoo. All rights reserved.</small><a href="/admin" class="admin-link">Studio admin</a></footer>
+<script src="/site.js"></script>
+</body></html>
